@@ -25,7 +25,7 @@ Run the docker image like the following replacing HOSTVOLUME with an absolute pa
 ```
 docker run \
   --env-file env.list \
-  --v HOSTVOLUME:/dat
+  -v HOSTVOLUME:/dat
 ```
 
 ### That's all
