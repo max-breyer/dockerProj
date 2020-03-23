@@ -17,12 +17,12 @@ if args.WEIGHTS and args.DOSAGES and args.SAMPLES and args.OUTPUT_PREFIX:
     ['./PrediXcan.py',
     '--predict',
     '--weights',
-    'args.WEIGHTS',
+    args.WEIGHTS,
     '--dosages',
-    'args.DOSAGES',
+    args.DOSAGES,
     '--samples',
-    'args.SAMPLES',
+    args.SAMPLES,
     '--output_prefix',
-    'args.OUTPUT_PREFIX'])
+    args.OUTPUT_PREFIX])
 else:
     print(str(args.WEIGHTS) + '\n' + str(args.DOSAGES) + '\n' + str(args.SAMPLES) + '\n' + str(args.OUTPUT_PREFIX))
